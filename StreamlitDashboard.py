@@ -1,8 +1,5 @@
-"""
-Greed vs Fear — Trader Sentiment Dashboard
-Run with:  streamlit run dashboard.py
-Place Closed_Trades.csv in the same folder.
-"""
+""" Greed vs Fear — Trader Sentiment Dashboard """
+
  
 import streamlit as st
 import pandas as pd
@@ -52,7 +49,7 @@ df = load_data()
 TOP_COINS   = df["Coin"].value_counts().head(8).index.tolist()
  
 # ── Sidebar ────────────────────────────────────────────────────────────────────
-st.sidebar.title("⚙️ Filters")
+st.sidebar.title("Filters")
 all_sentiments = df["classification"].dropna().unique().tolist()
 sel_sent = st.sidebar.multiselect("Sentiment", SENT_ORDER,
                                    default=SENT_ORDER)
@@ -68,7 +65,7 @@ st.markdown("---")
  
 # ── KPI row ───────────────────────────────────────────────────────────────────
 k1, k2, k3, k4 = st.columns(4)
-k1.metric("Total Trades",  f"{len(df_f):,}")
+k1.metric("Total Closed Trades",  f"{len(df_f):,}")
 k2.metric("Accounts",      df_f["Account"].nunique())
 k3.metric("Avg Net PnL",   f"${df_f['net_pnl'].mean():.1f}")
 k4.metric("Overall Win Rate", f"{df_f['is_win'].mean()*100:.1f}%")
@@ -207,7 +204,7 @@ st.pyplot(fig9); plt.close()
 st.markdown("---")
  
 #SImple Prediction Model on next-day trader profitability bucket or volatility of PnL using sentiment + behavior features
-st.header("🤖 Predict Next-Day Trader Profitability")
+st.header("Predict Next-Day Trader Profitability")
 st.caption("Random Forest trained on sentiment + behavior features → predicts PnL bucket")
  
 # ── daily feature table ─────────────────────────────────────────────────
@@ -284,7 +281,7 @@ plt.tight_layout()
 st.pyplot(fig_imp); plt.close()
  
 # ── Live predictor ────────────────────────────────────────────────────────────
-st.subheader("🔮 Try it — Predict for a Custom Scenario")
+st.subheader("Try it — Predict for a Custom Scenario")
 with st.form("predict_form"):
     pc1, pc2, pc3 = st.columns(3)
     with pc1:
@@ -416,4 +413,3 @@ display_df.columns       = ["Account","Archetype","Avg PnL","Win Rate",
 st.dataframe(display_df.set_index("Account"), use_container_width=True)
  
 st.markdown("---")
-st.caption("Dashboard built on Closed_Trades.csv · Streamlit + scikit-learn + matplotlib")
