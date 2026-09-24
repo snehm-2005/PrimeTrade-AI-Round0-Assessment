@@ -66,7 +66,7 @@ Sentiment is used with its five classes: **Extreme Fear, Fear, Neutral, Greed, E
 #### Average PnL
 
 <p align="center">
-  <img src="charts and plots\01_avg_pnl_vs_sentiment.png" alt="Average net PnL per closed trade vs market sentiment" width="700">
+  <img src="charts and plots\01_avg_pnl_vs_sentiment.png" alt="Average net PnL per closed trade vs market sentiment" width="400">
   <br><sub><b>Average net PnL per closed trade vs market sentiment</b></sub>
 </p>
 
@@ -79,7 +79,7 @@ Sentiment is used with its five classes: **Extreme Fear, Fear, Neutral, Greed, E
 #### Win rate
 
 <p align="center">
-  <img src="charts and plots\04_winrate_vs_sentiment.png" alt="Win rate vs market sentiment" width="700">
+  <img src="charts and plots\04_winrate_vs_sentiment.png" alt="Win rate vs market sentiment" width="400">
   <br><sub><b>Win rate vs market sentiment</b></sub>
 </p>
 
@@ -99,7 +99,7 @@ Sentiment is used with its five classes: **Extreme Fear, Fear, Neutral, Greed, E
 #### Drawdown
 
 <p align="center">
-  <img src="charts and plots\05_drawdown_vs_sentiment.png" alt="Average drawdown vs market sentiment" width="700">
+  <img src="charts and plots\05_drawdown_vs_sentiment.png" alt="Average drawdown vs market sentiment" width="400">
   <br><sub><b>Average drawdown vs market sentiment</b></sub>
 </p>
 
@@ -113,7 +113,7 @@ Sentiment is used with its five classes: **Extreme Fear, Fear, Neutral, Greed, E
 #### Long vs short preference
 
 <p align="center">
-  <img src="charts and plots\02_long_short_ratio_vs_sentiment.png" alt="Share of long positions vs market sentiment" width="700">
+  <img src="charts and plots\02_long_short_ratio_vs_sentiment.png" alt="Share of long positions vs market sentiment" width="400">
   <br><sub><b>Share of long positions vs market sentiment</b></sub>
 </p>
 
@@ -134,7 +134,7 @@ Sentiment is used with its five classes: **Extreme Fear, Fear, Neutral, Greed, E
 #### Aggression
 
 <p align="center">
-  <img src="charts and plots\03_aggression_vs_sentiment.png" alt="Aggression (share of crossed/taker orders) vs market sentiment" width="700">
+  <img src="charts and plots\03_aggression_vs_sentiment.png" alt="Aggression (share of crossed/taker orders) vs market sentiment" width="400">
   <br><sub><b>Aggression (share of crossed/taker orders) vs market sentiment</b></sub>
 </p>
 
@@ -145,7 +145,7 @@ Sentiment is used with its five classes: **Extreme Fear, Fear, Neutral, Greed, E
 #### Trade size
 
 <p align="center">
-  <img src="charts and plots/06_trade_size_vs_sentiment.png" alt="Average trade size (USD) vs market sentiment" width="700">
+  <img src="charts and plots/06_trade_size_vs_sentiment.png" alt="Average trade size (USD) vs market sentiment" width="400">
   <br><sub><b>Average trade size (USD) vs market sentiment</b></sub>
 </p>
 
@@ -157,7 +157,7 @@ Sentiment is used with its five classes: **Extreme Fear, Fear, Neutral, Greed, E
 #### Trading activity
 
 <p align="center">
-  <img src="charts and plots/07_num_trades_vs_sentiment.png" alt="Number of closed trades vs market sentiment" width="700">
+  <img src="charts and plots/07_num_trades_vs_sentiment.png" alt="Number of closed trades vs market sentiment" width="400">
   <br><sub><b>Number of closed trades vs market sentiment</b></sub>
 </p>
 
@@ -301,7 +301,7 @@ Segments were recomputed per trader and per sentiment class to see who does well
 #### Risk segment x sentiment
 
 <p align="center">
-  <img src="charts and plots/18_performance_risk_segment_sentiment.png" alt="Average PnL by risk segment and sentiment" width="700">
+  <img src="charts and plots/18_performance_risk_segment_sentiment.png" alt="Average PnL by risk segment and sentiment" width="400">
   <br><sub><b>Average PnL by risk segment and sentiment</b></sub>
 </p>
 
@@ -313,7 +313,7 @@ Segments were recomputed per trader and per sentiment class to see who does well
 #### Frequency segment x sentiment
 
 <p align="center">
-  <img src="charts and plots/19_performance_frequency_sentiment.png" alt="Average PnL by trading-frequency segment and sentiment" width="700">
+  <img src="charts and plots/19_performance_frequency_sentiment.png" alt="Average PnL by trading-frequency segment and sentiment" width="400">
   <br><sub><b>Average PnL by trading-frequency segment and sentiment</b></sub>
 </p>
 
